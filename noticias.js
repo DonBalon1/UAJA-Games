@@ -181,6 +181,60 @@ const NEWS_POSTS = [
     date: "11/02/2026",
     torneo: "1era Edición",
   },
+  {
+    media: [
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-03-11(1).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-03-11(2).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-03-11(3).jpeg`,
+        caption: ".",
+      },
+    ],
+    title: "Ch8sn't Game",
+    text: "Minoría total en la isla, los amigos de Jeffrey se llenaron los bolsillos de Sugus Max.",
+    date: "11/03/2026",
+    torneo: "1era Edición",
+  },
+  {
+    media: [
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-02-27(1).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-02-27(2).jpeg`,
+        caption: ".",
+      },
+    ],
+    title: "28 del Matador",
+    text: "Topu",
+    date: "27/02/2026",
+    torneo: "Cumpleaños Feliz",
+  },
+  {
+    media: [
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-03-07(1).jpeg`,
+        caption: ".",
+      },
+    ],
+    title: "28 de Guada",
+    text: "Cuak",
+    date: "07/03/2026",
+    torneo: "Cumpleaños Feliz",
+  },
 ];
 
 const newsFeed = document.getElementById("newsFeed");
