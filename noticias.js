@@ -208,6 +208,44 @@ const NEWS_POSTS = [
     media: [
       {
         type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-03-17(1).jpeg`,
+        caption: "Que Ricoooo",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-03-17(2).jpeg`,
+        caption: "Pareja Perdedora",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-03-17(3).jpeg`,
+        caption: "Regalo de Cumpleeee",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-03-17(4).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-03-17(5).jpeg`,
+        caption: "Mozo peludo 1",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-03-17(6).jpeg`,
+        caption: "Mozo peludo 2",
+      },
+    ],
+    title: "Mozo! Un Sanguche de Milanesa por favor.",
+    text: "Don Balón y Guada abrieron un restaurante en bajo belgrano... las críticas no se hicieron esperar, te sirven cualquier cosa! NO VAYAN!",
+    date: "17/03/2026",
+    torneo: "1era Edición",
+  },
+  {
+    media: [
+      {
+        type: "image",
         src: `${NEWS_ASSETS_BASE}/2026-02-27(1).jpg`,
         caption: ".",
       },
