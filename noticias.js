@@ -242,7 +242,7 @@ const NEWS_POSTS = [
     html: `
       Don Balón y Guada abrieron un restaurante en bajo belgrano y las críticas no se hicieron esperar... te sirven cualquier cosa! <strong>NO VAYAN!</strong><br><br>
       <strong>Algunas reseñas destacadas:</strong><br>
-      <em>"⭐⭐git/5 Pedí un arroz y me trajeron una lasagna bolognesa, nada que ver!"</em><br>
+      <em>"⭐⭐/5 Pedí un arroz y me trajeron una lasagna bolognesa, nada que ver!"</em><br>
       <em>"⭐/5 No entiendo cómo los mozos me trajeron TODO mal. No había nada de lo que pedí."</em><br><br>
       Mientras tanto, el restó de Piporne ya va por la segunda estrella michelín.
     `,
