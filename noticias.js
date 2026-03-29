@@ -30,11 +30,13 @@ const NEWS_POSTS = [
         caption: "Genio",
       },
     ],
-    title: "Al cole con el Pisto",
+    title: `<h3><span style="font-size: 20pt;"><strong>Al Cole con el Pisto</strong></span></h3>`,
     text: "Olivia empanadas conoce el código secreto.",
     date: "18/02/2026",
     torneo: "1era Edición",
   },
+
+
   {
     media: [
       {
@@ -53,11 +55,13 @@ const NEWS_POSTS = [
         caption: ".",
       },
     ],
-    title: "28 de Don Balón",
+    title: `<h3><span style="font-size: 20pt;"><strong>28 de Don Balón</strong></span></h3>`,
     text: "Capoooo",
     date: "07/01/2026",
     torneo: "Cumpleaños Feliz",
   },
+
+
   {
     media: [
       {
@@ -71,11 +75,13 @@ const NEWS_POSTS = [
         caption: ".",
       },
     ],
-    title: "Auxilio Mecánico",
+    title: `<h3><span style="font-size: 20pt;"><strong>Auxilio Mecánico</strong></span></h3>`,
     text: "Sin sumar en la tabla, ibo suma una moto nueva al garaje.",
     date: "01/02/2026",
     torneo: "1era Edición",
   },
+
+
   {
     media: [
       {
@@ -89,11 +95,13 @@ const NEWS_POSTS = [
         caption: ".",
       },
     ],
-    title: "La Noche del Genio",
+    title: `<h3><span style="font-size: 20pt;"><strong>La Noche del Genio</strong></span></h3>`,
     text: "Con 3 empanadas y 6 lucas menos, el Genio respondió con los puntos en el bolsillo.",
     date: "29/01/2026",
     torneo: "1era Edición",
   },
+
+
   {
     media: [
       {
@@ -102,11 +110,13 @@ const NEWS_POSTS = [
         caption: ".",
       },
     ],
-    title: "Comienza la Liga",
+    title: `<h3><span style="font-size: 20pt;"><strong>Comienza la Liga</strong></span></h3>`,
     text: "Don Balón y Ornet se llevan el MVP de la primera fecha.",
     date: "14/01/2026",
     torneo: "1era Edición",
   },
+
+
   {
     media: [
       {
@@ -125,11 +135,13 @@ const NEWS_POSTS = [
         caption: "Un 25",
       },
     ],
-    title: "¿Para que te traje matador?",
+    title: `<h3><span style="font-size: 20pt;"><strong>¿Para que te traje matador?</strong></span></h3>`,
     text: "Ibo y El Matador canjearon las millas por puntos en la tabla. Primer y segundo puesto para los rescatistas de la comida.",
     date: "25/02/2026",
     torneo: "1era Edición",
   },
+
+
   {
     media: [
       {
@@ -163,11 +175,13 @@ const NEWS_POSTS = [
         caption: ".",
       },
     ],
-    title: "Interrupción de Servicio",
+    title: `<h3><span style="font-size: 20pt;"><strong>Interrupción de Servicio</strong></span></h3>`,
     text: "Se cortó la luz en el barrio; El Gordo cada vez mas cerca de la cama.",
     date: "25/02/2026",
     torneo: "1era Edición",
   },
+
+
   {
     media: [
       {
@@ -176,11 +190,13 @@ const NEWS_POSTS = [
         caption: ".",
       },
     ],
-    title: "Operación Derrumbe",
+    title: `<h3><span style="font-size: 20pt;"><strong>Operación Derrumbe</strong></span></h3>`,
     text: "Ibo necesitó una sola mano para mandar a Cede al fondo. Mientras tanto, Guada se llevó el MVP.",
     date: "11/02/2026",
     torneo: "1era Edición",
   },
+
+
   {
     media: [
       {
@@ -199,11 +215,13 @@ const NEWS_POSTS = [
         caption: ".",
       },
     ],
-    title: "Ch8sn't Game",
+    title: `<h3><span style="font-size: 20pt;"><strong>Ch8sn't Game</strong></span></h3>`,
     text: "Minoría total en la isla, los amigos de Jeffrey se llenaron los bolsillos de Sugus Max.",
     date: "11/03/2026",
     torneo: "1era Edición",
   },
+
+
   {
     media: [
       {
@@ -237,18 +255,105 @@ const NEWS_POSTS = [
         caption: "Mozo peludo 2",
       },
     ],
-    title: "Mozo! Un Sanguche de Milanesa por favor.",
-    text: "Don Balón y Guada abrieron un restaurante en bajo belgrano y las críticas no se hicieron esperar.",
+    title: `<h3><span style="font-size: 20pt;"><strong>Mozo! Un sanguche de milanesa por favor!</strong></span></h3>`,
     html: `
-      Don Balón y Guada abrieron un restaurante en bajo belgrano y las críticas no se hicieron esperar... te sirven cualquier cosa! <strong>NO VAYAN!</strong><br><br>
-      <strong>Algunas reseñas destacadas:</strong><br>
-      <em>"⭐⭐/5 Pedí un arroz y me trajeron una lasagna bolognesa, nada que ver!"</em><br>
-      <em>"⭐/5 No entiendo cómo los mozos me trajeron TODO mal. No había nada de lo que pedí."</em><br><br>
+      Don Balón y Guada abrieron un restaurante en bajo belgrano y las críticas no se hicieron esperar... te sirven cualquier cosa!\n<strong>NO VAYAN!</strong><br>
+      <em>"⭐⭐/5 Pedí un arroz y me trajeron una lasagna bolognesa, nada que ver!"</em>
+      <em>"⭐/5 No entiendo cómo los mozos me trajeron TODO mal. No había nada de lo que pedí."</em><br>
       Mientras tanto, el restó de Piporne ya va por la segunda estrella michelín.
     `,
     date: "17/03/2026",
     torneo: "1era Edición",
   },
+
+
+  {
+    media: [
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-03-27(1).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-03-27(2).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-03-27(3).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-03-27(4).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-03-27(5).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-03-27(6).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-03-27(7).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-03-27(8).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-03-27(9).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-03-27(10).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-03-27(11).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-03-27(12).png`,
+        caption: ".",
+      },
+    ],
+    title: `<h3><span style="font-size: 20pt;"><strong>📞 Buenas tardes ¿Señor Lavalle?&nbsp;</strong></span><span style="font-size: 14pt;"><em>Lo llamamos del banco ¿Puede hablar un momentito?</em></span></h3>`,
+    html: `
+      Jornada de <strong>UAJA Specials!</strong>&nbsp;🤩 Agos se convirtió en Hostess de la épica <strong>TRIVIAJA</strong>, organizando una noche completamente distinta al resto.</p><p><br></p><p>Mientras Ibo bajó a dejarle unos dólares a un amigo de su tío 💸💰, Vicky se puso firme&nbsp;<em>"Taylor Era, eran las de antes pibe...."</em>&nbsp; y con todos ya medio borrachos, Don Balón y Agos empezaron a hacer comentarios medio raros... <em>"Tu familia no entiende este nivel de iluminación, por eso te frenan" o "Todo lo que tenés es gracias al grupo, deberías retribuirlo"</em>. ¿Qué querían...?
+    `,
+    date: "27/03/2026",
+    torneo: "1era Edición",
+  },
+
+
+  {
+    media: [
+      {
+        type: "pdf",
+        src: `${NEWS_ASSETS_BASE}/TRIVIAJA.pdf`,
+        caption: " ",
+      },
+    ],
+    title: `<h3><span style="font-size: 20pt;"><strong>Un Sommier para el Gordo</strong></span></h3>`,
+    text: "¿Quién es el más gay? ¿Quién formaría una secta? ¿Quién ganaría GH?   Mirá el PDF Bigote!",
+    date: "27/03/2026",
+    torneo: "1era Edición",
+  },
+
+
   {
     media: [
       {
@@ -262,11 +367,13 @@ const NEWS_POSTS = [
         caption: ".",
       },
     ],
-    title: "28 del Matador",
+    title: `<h3><span style="font-size: 20pt;"><strong>28 del Matador</strong></span></h3>`,
     text: "Topu",
     date: "27/02/2026",
     torneo: "Cumpleaños Feliz",
   },
+
+  
   {
     media: [
       {
@@ -280,7 +387,7 @@ const NEWS_POSTS = [
         caption: ".",
       },
     ],
-    title: "28 de Guada",
+    title: `<h3><span style="font-size: 20pt;"><strong>28 de Guada</strong></span></h3>`,
     text: "Cuak",
     date: "07/03/2026",
     torneo: "Cumpleaños Feliz",
@@ -315,7 +422,24 @@ function renderNewsFeed(posts) {
     content.className = "news-content";
 
     const title = document.createElement("h3");
-    title.textContent = post.title;
+    const titleHtml =
+      post.titleHtml || post.titleHTML || post.TitleHtml || post.TitleHTML || "";
+    const titleValue = post.title || post.Title || "";
+    if (typeof titleHtml === "string" && titleHtml.trim()) {
+      const htmlTitle = document.createElement("div");
+      htmlTitle.className = "news-title-html";
+      htmlTitle.innerHTML = titleHtml;
+      content.appendChild(htmlTitle);
+    } else if (typeof titleValue === "string" && /<[^>]+>/.test(titleValue)) {
+      const htmlTitle = document.createElement("div");
+      htmlTitle.className = "news-title-html";
+      htmlTitle.innerHTML = titleValue;
+      content.appendChild(htmlTitle);
+    } else {
+      title.className = "news-title-plain";
+      title.textContent = titleValue;
+      content.appendChild(title);
+    }
 
     const text = document.createElement("p");
     if (typeof post.html === "string" && post.html.trim()) {
@@ -333,7 +457,6 @@ function renderNewsFeed(posts) {
     torneo.textContent = post.torneo;
 
     content.appendChild(torneo);
-    content.appendChild(title);
     content.appendChild(text);
     content.appendChild(meta);
 
@@ -371,6 +494,44 @@ function createMediaCarousel(mediaItems, title) {
       video.preload = "metadata";
       video.className = "news-media-item";
       container.appendChild(video);
+      return;
+    }
+    if (item.type === "pdf") {
+      const wrapper = document.createElement("div");
+      wrapper.className = "news-pdf-preview";
+
+      const frameShell = document.createElement("div");
+      frameShell.className = "news-pdf-frame-shell";
+
+      const frame = document.createElement("iframe");
+      frame.src = `${item.src}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`;
+      frame.title = item.caption || title || "Vista previa de PDF";
+      frame.loading = "lazy";
+      frame.className = "news-pdf-frame";
+
+      const overlay = document.createElement("div");
+      overlay.className = "news-pdf-overlay";
+      overlay.textContent = item.caption || title || "Documento PDF";
+
+      frameShell.appendChild(frame);
+      frameShell.appendChild(overlay);
+
+      const actions = document.createElement("div");
+      actions.className = "news-pdf-actions";
+
+      const openPreview = document.createElement("button");
+      openPreview.type = "button";
+      openPreview.className = "news-pdf-btn";
+      openPreview.textContent = "Vista completa";
+      openPreview.setAttribute("aria-label", "Abrir vista completa del PDF");
+      openPreview.addEventListener("click", () => {
+        openMediaModal(mediaItems, currentIndex, title);
+      });
+
+      actions.appendChild(openPreview);
+      wrapper.appendChild(frameShell);
+      wrapper.appendChild(actions);
+      container.appendChild(wrapper);
       return;
     }
     const img = document.createElement("img");
@@ -493,6 +654,20 @@ function openMediaModal(items, index, title) {
     video.autoplay = true;
     video.className = "media-modal-media";
     body.appendChild(video);
+  } else if (item.type === "pdf") {
+    const frame = document.createElement("iframe");
+    frame.src = `${item.src}#toolbar=1&navpanes=0&view=FitH`;
+    frame.title = item.caption || activeModalTitle || "Documento PDF";
+    frame.className = "media-modal-media media-modal-pdf";
+    body.appendChild(frame);
+
+    const openTab = document.createElement("a");
+    openTab.href = item.src;
+    openTab.target = "_blank";
+    openTab.rel = "noopener noreferrer";
+    openTab.className = "media-modal-pdf-link";
+    openTab.textContent = "Abrir PDF en pestaña nueva";
+    body.appendChild(openTab);
   } else {
     const img = document.createElement("img");
     img.src = item.src;
@@ -529,6 +704,20 @@ function stepModal(direction) {
     video.autoplay = true;
     video.className = "media-modal-media";
     body.appendChild(video);
+  } else if (item.type === "pdf") {
+    const frame = document.createElement("iframe");
+    frame.src = `${item.src}#toolbar=1&navpanes=0&view=FitH`;
+    frame.title = item.caption || activeModalTitle || "Documento PDF";
+    frame.className = "media-modal-media media-modal-pdf";
+    body.appendChild(frame);
+
+    const openTab = document.createElement("a");
+    openTab.href = item.src;
+    openTab.target = "_blank";
+    openTab.rel = "noopener noreferrer";
+    openTab.className = "media-modal-pdf-link";
+    openTab.textContent = "Abrir PDF en pestaña nueva";
+    body.appendChild(openTab);
   } else {
     const img = document.createElement("img");
     img.src = item.src;
