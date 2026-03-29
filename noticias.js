@@ -366,6 +366,11 @@ const NEWS_POSTS = [
         src: `${NEWS_ASSETS_BASE}/2026-02-27(2).jpg`,
         caption: ".",
       },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026-02-27(3).jpeg`,
+        caption: ".",
+      },
     ],
     title: `<h3><span style="font-size: 20pt;"><strong>28 del Matador</strong></span></h3>`,
     text: "Topu",
@@ -383,7 +388,7 @@ const NEWS_POSTS = [
       },
       {
         type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-07(2).jpg`,
+        src: `${NEWS_ASSETS_BASE}/2026-03-07(2).jpeg`,
         caption: ".",
       },
     ],
