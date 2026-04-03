@@ -6,34 +6,34 @@ const NEWS_POSTS = [
     media: [
       {
         type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-02-18(1).png`,
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-02-18(1).png`,
         caption: "Bob Esponja se quería sacar una foto con su ídolo.",
       },
       {
         type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-02-18(2).jpg`,
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-02-18(2).jpg`,
         caption: "Pipa lideró la derrota, eligieron la negra.",
       },
       {
         type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-02-18(3).jpeg`,
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-02-18(3).jpeg`,
         caption: "Un Ombú",
       },
       {
         type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-02-18(4).jpeg`,
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-02-18(4).jpeg`,
         caption: "Lo ultimo que ve una Oslava.",
       },
       {
         type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-02-18(5).jpeg`,
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-02-18(5).jpeg`,
         caption: "Genio",
       },
     ],
     title: `<h3><span style="font-size: 20pt;"><strong>Al Cole con el Pisto</strong></span></h3>`,
     text: "Olivia empanadas conoce el código secreto.",
     date: "18/02/2026",
-    torneo: "1era Edición",
+    torneo: "2026 Apertura",
   },
 
 
@@ -41,17 +41,389 @@ const NEWS_POSTS = [
     media: [
       {
         type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-01-07(1).jpg`,
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-02-01(1).jpg`,
         caption: ".",
       },
       {
         type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-01-07(2).jpg`,
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-02-01(2).jpg`,
+        caption: ".",
+      },
+    ],
+    title: `<h3><span style="font-size: 20pt;"><strong>Auxilio Mecánico</strong></span></h3>`,
+    text: "Sin sumar en la tabla, ibo suma una moto nueva al garaje.",
+    date: "01/02/2026",
+    torneo: "2026 Apertura",
+  },
+
+
+  {
+    media: [
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-01-29(1).png`,
         caption: ".",
       },
       {
         type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-01-07(3).jpg`,
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-01-29(2).png`,
+        caption: ".",
+      },
+    ],
+    title: `<h3><span style="font-size: 20pt;"><strong>La Noche del Genio</strong></span></h3>`,
+    text: "Con 3 empanadas y 6 lucas menos, el Genio respondió con los puntos en el bolsillo.",
+    date: "29/01/2026",
+    torneo: "2026 Apertura",
+  },
+
+
+  {
+    media: [
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-01-14(1).png`,
+        caption: ".",
+      },
+    ],
+    title: `<h3><span style="font-size: 20pt;"><strong>Comienza la Liga</strong></span></h3>`,
+    text: "Don Balón y Ornet se llevan el MVP de la primera fecha.",
+    date: "14/01/2026",
+    torneo: "2026 Apertura",
+  },
+
+
+  {
+    media: [
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-02-25(1).png`,
+        caption: "El boludo del matador pidió la comida para otra dirección.",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-02-25(2).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-02-25(3).jpeg`,
+        caption: "Un 25",
+      },
+    ],
+    title: `<h3><span style="font-size: 20pt;"><strong>¿Para que te traje matador?</strong></span></h3>`,
+    text: "Ibo y El Matador canjearon las millas por puntos en la tabla. Primer y segundo puesto para los rescatistas de la comida.",
+    date: "25/02/2026",
+    torneo: "2026 Apertura",
+  },
+
+
+  {
+    media: [
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-02-25(4).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-02-25(5).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-02-25(6).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-02-25(7).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-02-25(8).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-02-25(9).jpeg`,
+        caption: ".",
+      },
+    ],
+    title: `<h3><span style="font-size: 20pt;"><strong>Interrupción de Servicio</strong></span></h3>`,
+    text: "Se cortó la luz en el barrio; El Gordo cada vez mas cerca de la cama.",
+    date: "25/02/2026",
+    torneo: "2026 Apertura",
+  },
+
+
+  {
+    media: [
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-02-11(1).jpeg`,
+        caption: ".",
+      },
+    ],
+    title: `<h3><span style="font-size: 20pt;"><strong>Operación Derrumbe</strong></span></h3>`,
+    text: "Ibo necesitó una sola mano para mandar a Cede al fondo. Mientras tanto, Guada se llevó el MVP.",
+    date: "11/02/2026",
+    torneo: "2026 Apertura",
+  },
+
+
+  {
+    media: [
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-03-11(1).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-03-11(2).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-03-11(3).jpeg`,
+        caption: ".",
+      },
+    ],
+    title: `<h3><span style="font-size: 20pt;"><strong>Ch8sn't Game</strong></span></h3>`,
+    text: "Minoría total en la isla, los amigos de Jeffrey se llenaron los bolsillos de Sugus Max.",
+    date: "11/03/2026",
+    torneo: "2026 Apertura",
+  },
+
+
+  {
+    media: [
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-03-17(1).jpeg`,
+        caption: "Que Ricoooo",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-03-17(2).jpeg`,
+        caption: "Pareja Perdedora",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-03-17(3).jpeg`,
+        caption: "Regalo de Cumpleeee",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-03-17(4).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-03-17(5).jpeg`,
+        caption: "Mozo peludo 1",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-03-17(6).jpeg`,
+        caption: "Mozo peludo 2",
+      },
+    ],
+    title: `<h3><span style="font-size: 20pt;"><strong>Mozo! Un sanguche de milanesa por favor!</strong></span></h3>`,
+    html: `
+      Don Balón y Guada abrieron un restaurante en bajo belgrano y las críticas no se hicieron esperar... te sirven cualquier cosa!\n<strong>NO VAYAN!</strong><br>
+      <em>"⭐⭐/5 Pedí un arroz y me trajeron una lasagna bolognesa, nada que ver!"</em>
+      <em>"⭐/5 No entiendo cómo los mozos me trajeron TODO mal. No había nada de lo que pedí."</em><br>
+      Mientras tanto, el restó de Piporne ya va por la segunda estrella michelín.
+    `,
+    date: "17/03/2026",
+    torneo: "2026 Apertura",
+  },
+
+
+  {
+    media: [
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-03-27(1).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-03-27(2).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-03-27(3).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-03-27(4).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-03-27(5).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-03-27(6).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-03-27(7).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-03-27(8).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-03-27(9).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-03-27(10).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-03-27(11).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-03-27(12).png`,
+        caption: ".",
+      },
+    ],
+    title: `<h3><span style="font-size: 20pt;"><strong>📞 Buenas tardes ¿Señor Lavalle?&nbsp;</strong></span><span style="font-size: 14pt;"><em>Lo llamamos del banco ¿Puede hablar un momentito?</em></span></h3>`,
+    html: `
+      Jornada de <strong>UAJA Specials!</strong>&nbsp;🤩 Agos se convirtió en Hostess de la épica <strong>TRIVIAJA</strong>, organizando una noche completamente distinta al resto.</p><p><br></p><p>Mientras Ibo bajó a dejarle unos dólares a un amigo de su tío 💸💰, Vicky se puso firme&nbsp;<em>"Taylor Era, eran las de antes pibe...."</em>&nbsp; y con todos ya medio borrachos, Don Balón y Agos empezaron a hacer comentarios medio raros... <em>"Tu familia no entiende este nivel de iluminación, por eso te frenan" o "Todo lo que tenés es gracias al grupo, deberías retribuirlo"</em>. ¿Qué querían...?
+    `,
+    date: "27/03/2026",
+    torneo: "2026 Apertura",
+  },
+
+
+  {
+    media: [
+      {
+        type: "pdf",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/TRIVIAJA.pdf`,
+        caption: " ",
+      },
+    ],
+    title: `<h3><span style="font-size: 20pt;"><strong>Un Sommier para el Gordo</strong></span></h3>`,
+    text: "¿Quién es el más gay? ¿Quién formaría una secta? ¿Quién ganaría GH?   Mirá el PDF Bigote!",
+    date: "27/03/2026",
+    torneo: "2026 Apertura",
+  },
+
+
+  {
+    media: [
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-01(1).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-01(2).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-01(3).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-01(4).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-01(5).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-01(6).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-01(7).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-01(8).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-01(9).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-01(10).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-01(11).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-01(12).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-01(13).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-01(14).jpeg`,
+        caption: " ",
+      },
+    ],
+    title: `<h3><span style="font-size: 20pt;"><strong>Cumpleaños Tabú</strong></span></h3>`,
+    html: `<p>Esta jornada de <strong>UAJA GAMES</strong> dio inicio a la semana de cumpleaños de <strong>Hudson Ornett 🎊🎂🎉.&nbsp;</strong> Todos sabemos que los cumpleaños duran 1 día, pero este cumpleaños dura una semana, del 1 al 8 de abril directo, cuanto menos preguntes mejor papi.<br><br>EL juego de la fecha? <strong>TABOO.</strong> <em>My fucking god</em> que juego complicado!</p><p>Una tarjeta que complicó a todos:<br><strong>Palabra Clave:</strong> <em>"El Pisto"</em> <br><strong>Palabras que no podías decir:</strong> <em>"Oslava, Puchos, Bodega, Máquina del Sexo y Quilmes"&nbsp;</em>&nbsp;</p><p>Prácticamente imposible.</p>`,
+    date: "01/04/2026",
+    torneo: "2026 Apertura",
+  },
+
+
+  {
+    media: [
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Cumpleanios_Feliz/2026-01-07(1).jpg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Cumpleanios_Feliz/2026-01-07(2).jpg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Cumpleanios_Feliz/2026-01-07(3).jpg`,
         caption: ".",
       },
     ],
@@ -66,309 +438,17 @@ const NEWS_POSTS = [
     media: [
       {
         type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-02-01(1).jpg`,
+        src: `${NEWS_ASSETS_BASE}/2026/Cumpleanios_Feliz/2026-02-27(1).jpg`,
         caption: ".",
       },
       {
         type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-02-01(2).jpg`,
-        caption: ".",
-      },
-    ],
-    title: `<h3><span style="font-size: 20pt;"><strong>Auxilio Mecánico</strong></span></h3>`,
-    text: "Sin sumar en la tabla, ibo suma una moto nueva al garaje.",
-    date: "01/02/2026",
-    torneo: "1era Edición",
-  },
-
-
-  {
-    media: [
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-01-29(1).png`,
+        src: `${NEWS_ASSETS_BASE}/2026/Cumpleanios_Feliz/2026-02-27(2).jpg`,
         caption: ".",
       },
       {
         type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-01-29(2).png`,
-        caption: ".",
-      },
-    ],
-    title: `<h3><span style="font-size: 20pt;"><strong>La Noche del Genio</strong></span></h3>`,
-    text: "Con 3 empanadas y 6 lucas menos, el Genio respondió con los puntos en el bolsillo.",
-    date: "29/01/2026",
-    torneo: "1era Edición",
-  },
-
-
-  {
-    media: [
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-01-14(1).png`,
-        caption: ".",
-      },
-    ],
-    title: `<h3><span style="font-size: 20pt;"><strong>Comienza la Liga</strong></span></h3>`,
-    text: "Don Balón y Ornet se llevan el MVP de la primera fecha.",
-    date: "14/01/2026",
-    torneo: "1era Edición",
-  },
-
-
-  {
-    media: [
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-02-25(1).png`,
-        caption: "El boludo del matador pidió la comida para otra dirección.",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-02-25(2).jpeg`,
-        caption: ".",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-02-25(3).jpeg`,
-        caption: "Un 25",
-      },
-    ],
-    title: `<h3><span style="font-size: 20pt;"><strong>¿Para que te traje matador?</strong></span></h3>`,
-    text: "Ibo y El Matador canjearon las millas por puntos en la tabla. Primer y segundo puesto para los rescatistas de la comida.",
-    date: "25/02/2026",
-    torneo: "1era Edición",
-  },
-
-
-  {
-    media: [
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-02-25(4).jpeg`,
-        caption: ".",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-02-25(5).jpeg`,
-        caption: ".",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-02-25(6).jpeg`,
-        caption: ".",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-02-25(7).jpeg`,
-        caption: ".",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-02-25(8).jpeg`,
-        caption: ".",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-02-25(9).jpeg`,
-        caption: ".",
-      },
-    ],
-    title: `<h3><span style="font-size: 20pt;"><strong>Interrupción de Servicio</strong></span></h3>`,
-    text: "Se cortó la luz en el barrio; El Gordo cada vez mas cerca de la cama.",
-    date: "25/02/2026",
-    torneo: "1era Edición",
-  },
-
-
-  {
-    media: [
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-02-11(1).jpeg`,
-        caption: ".",
-      },
-    ],
-    title: `<h3><span style="font-size: 20pt;"><strong>Operación Derrumbe</strong></span></h3>`,
-    text: "Ibo necesitó una sola mano para mandar a Cede al fondo. Mientras tanto, Guada se llevó el MVP.",
-    date: "11/02/2026",
-    torneo: "1era Edición",
-  },
-
-
-  {
-    media: [
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-11(1).jpeg`,
-        caption: ".",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-11(2).jpeg`,
-        caption: ".",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-11(3).jpeg`,
-        caption: ".",
-      },
-    ],
-    title: `<h3><span style="font-size: 20pt;"><strong>Ch8sn't Game</strong></span></h3>`,
-    text: "Minoría total en la isla, los amigos de Jeffrey se llenaron los bolsillos de Sugus Max.",
-    date: "11/03/2026",
-    torneo: "1era Edición",
-  },
-
-
-  {
-    media: [
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-17(1).jpeg`,
-        caption: "Que Ricoooo",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-17(2).jpeg`,
-        caption: "Pareja Perdedora",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-17(3).jpeg`,
-        caption: "Regalo de Cumpleeee",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-17(4).jpeg`,
-        caption: ".",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-17(5).jpeg`,
-        caption: "Mozo peludo 1",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-17(6).jpeg`,
-        caption: "Mozo peludo 2",
-      },
-    ],
-    title: `<h3><span style="font-size: 20pt;"><strong>Mozo! Un sanguche de milanesa por favor!</strong></span></h3>`,
-    html: `
-      Don Balón y Guada abrieron un restaurante en bajo belgrano y las críticas no se hicieron esperar... te sirven cualquier cosa!\n<strong>NO VAYAN!</strong><br>
-      <em>"⭐⭐/5 Pedí un arroz y me trajeron una lasagna bolognesa, nada que ver!"</em>
-      <em>"⭐/5 No entiendo cómo los mozos me trajeron TODO mal. No había nada de lo que pedí."</em><br>
-      Mientras tanto, el restó de Piporne ya va por la segunda estrella michelín.
-    `,
-    date: "17/03/2026",
-    torneo: "1era Edición",
-  },
-
-
-  {
-    media: [
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-27(1).jpeg`,
-        caption: ".",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-27(2).jpeg`,
-        caption: ".",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-27(3).jpeg`,
-        caption: ".",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-27(4).jpeg`,
-        caption: ".",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-27(5).jpeg`,
-        caption: ".",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-27(6).jpeg`,
-        caption: ".",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-27(7).jpeg`,
-        caption: ".",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-27(8).jpeg`,
-        caption: ".",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-27(9).jpeg`,
-        caption: ".",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-27(10).jpeg`,
-        caption: ".",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-27(11).jpeg`,
-        caption: ".",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-27(12).png`,
-        caption: ".",
-      },
-    ],
-    title: `<h3><span style="font-size: 20pt;"><strong>📞 Buenas tardes ¿Señor Lavalle?&nbsp;</strong></span><span style="font-size: 14pt;"><em>Lo llamamos del banco ¿Puede hablar un momentito?</em></span></h3>`,
-    html: `
-      Jornada de <strong>UAJA Specials!</strong>&nbsp;🤩 Agos se convirtió en Hostess de la épica <strong>TRIVIAJA</strong>, organizando una noche completamente distinta al resto.</p><p><br></p><p>Mientras Ibo bajó a dejarle unos dólares a un amigo de su tío 💸💰, Vicky se puso firme&nbsp;<em>"Taylor Era, eran las de antes pibe...."</em>&nbsp; y con todos ya medio borrachos, Don Balón y Agos empezaron a hacer comentarios medio raros... <em>"Tu familia no entiende este nivel de iluminación, por eso te frenan" o "Todo lo que tenés es gracias al grupo, deberías retribuirlo"</em>. ¿Qué querían...?
-    `,
-    date: "27/03/2026",
-    torneo: "1era Edición",
-  },
-
-
-  {
-    media: [
-      {
-        type: "pdf",
-        src: `${NEWS_ASSETS_BASE}/TRIVIAJA.pdf`,
-        caption: " ",
-      },
-    ],
-    title: `<h3><span style="font-size: 20pt;"><strong>Un Sommier para el Gordo</strong></span></h3>`,
-    text: "¿Quién es el más gay? ¿Quién formaría una secta? ¿Quién ganaría GH?   Mirá el PDF Bigote!",
-    date: "27/03/2026",
-    torneo: "1era Edición",
-  },
-
-
-  {
-    media: [
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-02-27(1).jpg`,
-        caption: ".",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-02-27(2).jpg`,
-        caption: ".",
-      },
-      {
-        type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-02-27(3).jpeg`,
+        src: `${NEWS_ASSETS_BASE}/2026/Cumpleanios_Feliz/2026-02-27(3).jpeg`,
         caption: ".",
       },
     ],
@@ -383,18 +463,43 @@ const NEWS_POSTS = [
     media: [
       {
         type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-07(1).jpg`,
+        src: `${NEWS_ASSETS_BASE}/2026/Cumpleanios_Feliz/2026-03-07(1).jpg`,
         caption: ".",
       },
       {
         type: "image",
-        src: `${NEWS_ASSETS_BASE}/2026-03-07(2).jpeg`,
+        src: `${NEWS_ASSETS_BASE}/2026/Cumpleanios_Feliz/2026-03-07(2).jpeg`,
         caption: ".",
       },
     ],
     title: `<h3><span style="font-size: 20pt;"><strong>28 de Guada</strong></span></h3>`,
     text: "Cuak",
     date: "07/03/2026",
+    torneo: "Cumpleaños Feliz",
+  },
+
+
+  {
+    media: [
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Cumpleanios_Feliz/2026-04-01(1).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Cumpleanios_Feliz/2026-04-01(2).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Cumpleanios_Feliz/2026-04-01(3).jpeg`,
+        caption: ".",
+      },
+    ],
+    title: `<h3><span style="font-size: 20pt;"><strong>27 de Orne</strong></span></h3>`,
+    text: "Tuki",
+    date: "01/04/2026",
     torneo: "Cumpleaños Feliz",
   },
 ];

@@ -401,3 +401,10 @@ function drawChart() {
 loadSheetTabs().then(() => {
   loadData(getSelectedGid());
 });
+
+
+
+
+
+
+
