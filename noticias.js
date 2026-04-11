@@ -409,6 +409,56 @@ const NEWS_POSTS = [
   },
 
 
+
+
+  {
+    media: [
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-09(1).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-09(2).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-09(3).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-09(4).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-09(5).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-09(6).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-09(7).jpeg`,
+        caption: " ",
+      },
+      
+    ],
+    title: `<h3><span style="font-size: 20pt;"><strong>Los Negros Pueden Votar</strong></span></h3>`,
+    html: `<p>Ponete cómodo que arranca la clase del negro. Vas a aprender a chuparla como nunca en tu vida. <br><br><br>Gordo deja el pucho por favor te lo pido</p>`,
+    date: "09/04/2026",
+    torneo: "2026 Apertura",
+  },
+
+
+
+
   {
     media: [
       {
