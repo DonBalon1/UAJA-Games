@@ -458,6 +458,49 @@ const NEWS_POSTS = [
 
 
 
+  {
+    media: [
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-16(1).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-16(2).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-16(3).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-16(4).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-16(5).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-16(6).jpeg`,
+        caption: " ",
+      },
+      
+      
+    ],
+    title: `<h3><span style="font-size: 20pt;"><strong>Si Don Balón vuelve a perder se suspende todo</strong></span></h3>`,
+    html: `<p>Puchito - Piña de mogolico - Martín y Martín - Ventiladores Martín y Martín - El Padre Grassi - Loan - Megalodón 5 - Shuek para siempre - Tuki Tuki (el anime ese ni idea) - Piñón Fijo<br><br><br>¿A vos te parece?</p>`,
+    date: "16/04/2026",
+    torneo: "2026 Apertura",
+  },
+
+
+
 
   {
     media: [
