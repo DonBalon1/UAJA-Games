@@ -500,6 +500,84 @@ const NEWS_POSTS = [
   },
 
 
+{
+    media: [
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-22(1).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-22(2).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-22(3).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-22(4).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-22(5).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-22(6).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-22(7).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-22(8).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-22(9).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-22(10).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "audio",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/22-04-2026(1).mp3`,
+        caption: "Obra de Batucada Fantástica Vol. 2 - Segunda Sinfonía - Tercer Movimiento en Sol Menor.",
+      },
+      
+      
+      
+    ],
+    title: `<h3><span style="font-size: 20pt;"><strong>🎶 Che esta muy bueno ese disco ¡Ponelo de Vuelta! 🎵</strong></span></h3>`,
+    html: `<p>Despues de una noche tranquila de m&uacute;sica relajante y juegos de mesa, Don Bal&oacute;n volvi&oacute; a ganar y la p&aacute;gina sobrevive una semana m&aacute;s.......</p>
+<p>El Matador se puso la 10 y trajo comida para todos, que grande Matador!</p>`,
+    date: "22/04/2026",
+    torneo: "2026 Apertura",
+  },
+
+
+
+
+
+
+
+
+
+
+
 
 
   {
@@ -597,6 +675,29 @@ const NEWS_POSTS = [
   },
 ];
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const newsFeed = document.getElementById("newsFeed");
 const torneoSelect = document.getElementById("torneoSelect");
 const mediaModal = createMediaModal();
@@ -619,7 +720,10 @@ function renderNewsFeed(posts) {
     card.className = "news-card";
 
     const mediaItems = Array.isArray(post.media) ? post.media : [];
-    const media = createMediaCarousel(mediaItems, post.title);
+    const visualMediaItems = mediaItems.filter((item) => !isAudioMedia(item));
+    const audioItems = mediaItems.filter((item) => isAudioMedia(item));
+    const media = createMediaCarousel(visualMediaItems, post.title);
+    const audioSection = createAudioSection(audioItems, post.title);
 
     const content = document.createElement("div");
     content.className = "news-content";
@@ -661,6 +765,9 @@ function renderNewsFeed(posts) {
 
     content.appendChild(torneo);
     content.appendChild(text);
+    if (audioSection) {
+      content.appendChild(audioSection);
+    }
     content.appendChild(meta);
 
     if (media) {
@@ -670,6 +777,65 @@ function renderNewsFeed(posts) {
 
     newsFeed.appendChild(card);
   });
+}
+
+function isAudioMedia(item) {
+  if (!item || typeof item !== "object") {
+    return false;
+  }
+  return item.type === "audio" || item.type === "mp3";
+}
+
+function getPlainText(value) {
+  if (typeof value !== "string" || !value.trim()) {
+    return "";
+  }
+  if (!/<[^>]+>/.test(value)) {
+    return value.trim();
+  }
+  const temp = document.createElement("div");
+  temp.innerHTML = value;
+  return (temp.textContent || temp.innerText || "").trim();
+}
+
+function createAudioSection(audioItems, title) {
+  if (!audioItems || audioItems.length === 0) {
+    return null;
+  }
+
+  const cleanTitle = getPlainText(title) || "Audio";
+
+  const section = document.createElement("div");
+  section.className = "news-audio-section";
+
+  audioItems.forEach((item, index) => {
+    const audioCard = document.createElement("div");
+    audioCard.className = "news-audio-panel";
+
+    const explicitCaption = typeof item.caption === "string" ? item.caption.trim() : "";
+    const audioLabelText = explicitCaption || (audioItems.length > 1 ? `${cleanTitle} · Audio ${index + 1}` : "");
+
+    const audio = document.createElement("audio");
+    audio.src = item.src;
+    audio.controls = true;
+    audio.preload = "metadata";
+    audio.className = "news-audio-panel-player";
+
+    if (audioLabelText) {
+      const audioInfo = document.createElement("div");
+      audioInfo.className = "news-audio-panel-info";
+
+      const audioLabel = document.createElement("div");
+      audioLabel.className = "news-audio-panel-label";
+      audioLabel.textContent = audioLabelText;
+      audioInfo.appendChild(audioLabel);
+      audioCard.appendChild(audioInfo);
+    }
+    audioCard.appendChild(audio);
+    section.appendChild(audioCard);
+  });
+
+  return section;
 }
 
 function createMediaCarousel(mediaItems, title) {
@@ -793,6 +959,63 @@ function createMediaCarousel(mediaItems, title) {
   return wrapper;
 }
 
+function renderModalMediaItem(body, item, title) {
+  if (!body || !item) {
+    return;
+  }
+
+  body.innerHTML = "";
+
+  if (item.type === "audio" || item.type === "mp3") {
+    const audioShell = document.createElement("div");
+    audioShell.className = "media-modal-audio-shell";
+
+    const audio = document.createElement("audio");
+    audio.src = item.src;
+    audio.controls = true;
+    audio.autoplay = true;
+    audio.preload = "metadata";
+    audio.className = "media-modal-audio-player";
+
+    audioShell.appendChild(audio);
+    body.appendChild(audioShell);
+    return;
+  }
+
+  if (item.type === "video") {
+    const video = document.createElement("video");
+    video.src = item.src;
+    video.controls = true;
+    video.autoplay = true;
+    video.className = "media-modal-media";
+    body.appendChild(video);
+    return;
+  }
+
+  if (item.type === "pdf") {
+    const frame = document.createElement("iframe");
+    frame.src = `${item.src}#toolbar=1&navpanes=0&view=FitH`;
+    frame.title = item.caption || title || "Documento PDF";
+    frame.className = "media-modal-media media-modal-pdf";
+    body.appendChild(frame);
+
+    const openTab = document.createElement("a");
+    openTab.href = item.src;
+    openTab.target = "_blank";
+    openTab.rel = "noopener noreferrer";
+    openTab.className = "media-modal-pdf-link";
+    openTab.textContent = "Abrir PDF en pestaña nueva";
+    body.appendChild(openTab);
+    return;
+  }
+
+  const img = document.createElement("img");
+  img.src = item.src;
+  img.alt = title || "Imagen";
+  img.className = "media-modal-media";
+  body.appendChild(img);
+}
+
 function createMediaModal() {
   const modal = document.createElement("div");
   modal.className = "media-modal";
@@ -849,35 +1072,7 @@ function openMediaModal(items, index, title) {
   if (!body || !caption) {
     return;
   }
-  body.innerHTML = "";
-  if (item.type === "video") {
-    const video = document.createElement("video");
-    video.src = item.src;
-    video.controls = true;
-    video.autoplay = true;
-    video.className = "media-modal-media";
-    body.appendChild(video);
-  } else if (item.type === "pdf") {
-    const frame = document.createElement("iframe");
-    frame.src = `${item.src}#toolbar=1&navpanes=0&view=FitH`;
-    frame.title = item.caption || activeModalTitle || "Documento PDF";
-    frame.className = "media-modal-media media-modal-pdf";
-    body.appendChild(frame);
-
-    const openTab = document.createElement("a");
-    openTab.href = item.src;
-    openTab.target = "_blank";
-    openTab.rel = "noopener noreferrer";
-    openTab.className = "media-modal-pdf-link";
-    openTab.textContent = "Abrir PDF en pestaña nueva";
-    body.appendChild(openTab);
-  } else {
-    const img = document.createElement("img");
-    img.src = item.src;
-    img.alt = title || "Imagen";
-    img.className = "media-modal-media";
-    body.appendChild(img);
-  }
+  renderModalMediaItem(body, item, activeModalTitle);
   caption.textContent = item.caption || activeModalTitle;
   mediaModal.classList.add("open");
   document.body.classList.add("modal-open");
@@ -899,35 +1094,7 @@ function stepModal(direction) {
   if (!body || !item) {
     return;
   }
-  body.innerHTML = "";
-  if (item.type === "video") {
-    const video = document.createElement("video");
-    video.src = item.src;
-    video.controls = true;
-    video.autoplay = true;
-    video.className = "media-modal-media";
-    body.appendChild(video);
-  } else if (item.type === "pdf") {
-    const frame = document.createElement("iframe");
-    frame.src = `${item.src}#toolbar=1&navpanes=0&view=FitH`;
-    frame.title = item.caption || activeModalTitle || "Documento PDF";
-    frame.className = "media-modal-media media-modal-pdf";
-    body.appendChild(frame);
-
-    const openTab = document.createElement("a");
-    openTab.href = item.src;
-    openTab.target = "_blank";
-    openTab.rel = "noopener noreferrer";
-    openTab.className = "media-modal-pdf-link";
-    openTab.textContent = "Abrir PDF en pestaña nueva";
-    body.appendChild(openTab);
-  } else {
-    const img = document.createElement("img");
-    img.src = item.src;
-    img.alt = item.caption || activeModalTitle || "Imagen";
-    img.className = "media-modal-media";
-    body.appendChild(img);
-  }
+  renderModalMediaItem(body, item, item.caption || activeModalTitle || "");
   const caption = mediaModal.querySelector(".media-modal-caption");
   if (caption) {
     caption.textContent = item.caption || activeModalTitle;
