@@ -553,6 +553,11 @@ const NEWS_POSTS = [
         caption: " ",
       },
       {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-22(11).png`,
+        caption: " ",
+      },
+      {
         type: "audio",
         src: `${NEWS_ASSETS_BASE}/2026/Apertura/22-04-2026(1).mp3`,
         caption: "Obra de Batucada Fantástica Vol. 2 - Segunda Sinfonía - Tercer Movimiento en Sol Menor.",
