@@ -576,7 +576,22 @@ const NEWS_POSTS = [
 
 
 
-
+{
+    media: [
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-29(1).png`,
+        caption: " ",
+      },
+       
+      
+      
+    ],
+    title: `<h3><span style="font-size: 20pt;"><strong>📅 Calendario Académico 📆</strong></span></h3>`,
+    html: `<p><strong>Fechas Importantes</strong></p><ul><li><strong>27 de Mayo:</strong> Ultima fecha UAJA Games</li><li><strong>3 de Junio:</strong> Gala de Cierre</li></ul><p>Si un jugador del podio se ausenta a la gala de cierre se le otorgará el premio del puesto al jugador siguiente en la tabla.</p>`,
+    date: "29/04/2026",
+    torneo: "2026 Apertura",
+  },
 
 
 
