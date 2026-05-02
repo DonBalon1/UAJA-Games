@@ -189,18 +189,10 @@ body {
   gap: 8px;
 }
 
-.news-audio-section-title {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: rgba(125, 211, 252, 0.92);
-}
-
 .news-audio-panel {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   padding: 12px 14px;
   border-radius: 12px;
   border: 1px solid rgba(56, 189, 248, 0.14);
@@ -234,6 +226,13 @@ body {
   font-weight: 600;
   color: var(--muted);
   line-height: 1.3;
+}
+
+.news-audio-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
 }
 
 .news-audio-panel-player {
@@ -438,6 +437,10 @@ body {
 @media (max-width: 560px) {
   .news-audio-panel {
     padding: 10px 12px;
+  }
+
+  .news-audio-controls {
+    gap: 6px;
   }
 
   .news-audio-panel-player {

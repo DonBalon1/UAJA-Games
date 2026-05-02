@@ -500,7 +500,7 @@ const NEWS_POSTS = [
   },
 
 
-{
+  {
     media: [
       {
         type: "image",
@@ -576,7 +576,7 @@ const NEWS_POSTS = [
 
 
 
-{
+  {
     media: [
       {
         type: "image",
@@ -595,7 +595,107 @@ const NEWS_POSTS = [
 
 
 
+  {
+    media: [
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-30(1).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-30(2).jpeg`,
+        caption: " ",
+      }, 
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-30(3).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-30(4).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-30(5).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-30(6).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-30(7).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-30(8).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-30(9).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-30(10).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-30(11).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-30(12).jpeg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-30(13).jpg`,
+        caption: " ",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-30(14).jpg`,
+        caption: " ",
+      },
+      {
+        type: "audio",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-30(1).mp3`,
+        caption: "This is Me",
+      },
+      {
+        type: "audio",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-30(2).mp3`,
+        caption: "Gotta Find You",
+      },
+      {
+        type: "audio",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-30(3).mp3`,
+        caption: "Braking Free",
+      },
+      {
+        type: "audio",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-04-30(4).mp3`,
+        caption: "Stick to the Status Quo",
+      },
 
+    ],
+    title: `<h3><span style="font-size: 20pt;"><strong>Cogido en Secreto</strong></span></h3>`,
+    html: `<p><strong>Digo... C&oacute;digo Secreto, eso!<br /></strong><em>S&oacute;crates, Suculini, Silvio Rodriguez, Paulo Londra, Paulo Londra transexual, Germ&aacute;n Garmendia, Fernanflo.<br /></em>Como cuesta este juego dios mio.</p>
+<p>⭐⭐⭐⭐⭐ Bueno de repente parece que&nbsp; nos llevamos bien con Olivia Empanadas. B&aacute;rbaro. El matador exige explicaciones...</p>
+<p>🎶 🎬 Termin&oacute; la jornada y vimos.... <strong>CAMP ROCK?</strong> La cara de tocadiscos que maneja jou jonas y la cara de falopera de la chabona que no me acuerdo el nombre. Bueno todo bien igual la peli muy buena. Por si no era suficiente, termin&oacute; camp rock y nos pusimos a ver <strong>High school musical</strong>, obviamente que le pasa el trapo can rock y todo lo que vos quieras. M&aacute;quina troy bolton.</p>`,
+    date: "30/04/2026",
+    torneo: "2026 Apertura",
+  },
 
 
 
@@ -828,32 +928,92 @@ function createAudioSection(audioItems, title) {
   const section = document.createElement("div");
   section.className = "news-audio-section";
 
-  audioItems.forEach((item, index) => {
-    const audioCard = document.createElement("div");
-    audioCard.className = "news-audio-panel";
-
+  const getAudioLabel = (item, index) => {
     const explicitCaption = typeof item.caption === "string" ? item.caption.trim() : "";
-    const audioLabelText = explicitCaption || (audioItems.length > 1 ? `${cleanTitle} · Audio ${index + 1}` : "");
+    return explicitCaption || (audioItems.length > 1 ? `${cleanTitle} · Audio ${index + 1}` : "");
+  };
 
-    const audio = document.createElement("audio");
-    audio.src = item.src;
-    audio.controls = true;
-    audio.preload = "metadata";
-    audio.className = "news-audio-panel-player";
+  const audioCard = document.createElement("div");
+  audioCard.className = "news-audio-panel";
 
-    if (audioLabelText) {
-      const audioInfo = document.createElement("div");
-      audioInfo.className = "news-audio-panel-info";
+  const audioInfo = document.createElement("div");
+  audioInfo.className = "news-audio-panel-info";
 
-      const audioLabel = document.createElement("div");
-      audioLabel.className = "news-audio-panel-label";
-      audioLabel.textContent = audioLabelText;
-      audioInfo.appendChild(audioLabel);
-      audioCard.appendChild(audioInfo);
+  const audioLabel = document.createElement("div");
+  audioLabel.className = "news-audio-panel-label";
+  audioInfo.appendChild(audioLabel);
+
+  const audio = document.createElement("audio");
+  audio.controls = true;
+  audio.preload = "metadata";
+  audio.className = "news-audio-panel-player";
+
+  let currentIndex = 0;
+
+  const renderAudio = () => {
+    const item = audioItems[currentIndex];
+    if (!item) {
+      return;
     }
-    audioCard.appendChild(audio);
-    section.appendChild(audioCard);
-  });
+    audio.pause();
+    audio.src = item.src;
+    audio.load();
+
+    const labelText = getAudioLabel(item, currentIndex);
+    if (labelText) {
+      audioLabel.textContent = labelText;
+      audioInfo.hidden = false;
+    } else {
+      audioLabel.textContent = "";
+      audioInfo.hidden = true;
+    }
+
+    if (counter) {
+      counter.textContent = `${currentIndex + 1}/${audioItems.length}`;
+    }
+  };
+
+  audioCard.appendChild(audioInfo);
+  audioCard.appendChild(audio);
+
+  let counter = null;
+  if (audioItems.length > 1) {
+    const controls = document.createElement("div");
+    controls.className = "news-audio-controls";
+
+    const prev = document.createElement("button");
+    prev.type = "button";
+    prev.className = "news-media-btn";
+    prev.textContent = "◀";
+    prev.setAttribute("aria-label", "Audio anterior");
+
+    counter = document.createElement("span");
+    counter.className = "news-media-counter";
+
+    const next = document.createElement("button");
+    next.type = "button";
+    next.className = "news-media-btn";
+    next.textContent = "▶";
+    next.setAttribute("aria-label", "Audio siguiente");
+
+    prev.addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + audioItems.length) % audioItems.length;
+      renderAudio();
+    });
+
+    next.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % audioItems.length;
+      renderAudio();
+    });
+
+    controls.appendChild(prev);
+    controls.appendChild(counter);
+    controls.appendChild(next);
+    audioCard.appendChild(controls);
+  }
+
+  renderAudio();
+  section.appendChild(audioCard);
 
   return section;
 }
