@@ -698,6 +698,35 @@ const NEWS_POSTS = [
   },
 
 
+  {
+    media: [
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-05-08(1).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-05-08(2).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-05-08(3).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Apertura/2026-05-08(4).jpg`,
+        caption: ".",
+      },
+    ],
+    title: `<h3><span style="font-size: 20pt;"><strong>Chupamela con la Mente</strong></span></h3>`,
+    html: `<p>Hagan lo que quieran, no pasa nada. Ibo est&aacute; primero y el gordo segundo, dej&aacute;, anda tranquilo. Don bal&oacute;n baj&oacute; un poco a saludar a los de abajo, a ver si hace fr&iacute;o.&nbsp;<br /><br />Bolitas</p>`,
+    date: "08/05/2026",
+    torneo: "2026 Apertura",
+  },
+
 
 
   {
@@ -793,6 +822,39 @@ const NEWS_POSTS = [
     date: "01/04/2026",
     torneo: "Cumpleaños Feliz",
   },
+
+
+
+  {
+    media: [
+      {
+        type: "image",
+        src: `${NEWS_ASSETS_BASE}/2026/Cumpleanios_Feliz/2026-05-09(1).jpeg`,
+        caption: ".",
+      },
+      {
+        type: "video",
+        src: `${NEWS_ASSETS_BASE}/2026/Cumpleanios_Feliz/2026-05-09(2).mp4`,
+        caption: ".",
+      },
+      {
+        type: "video",
+        src: `${NEWS_ASSETS_BASE}/2026/Cumpleanios_Feliz/2026-05-09(3).mp4`,
+        caption: ".",
+      },
+      {
+        type: "video",
+        src: `${NEWS_ASSETS_BASE}/2026/Cumpleanios_Feliz/2026-05-09(4).mp4`,
+        caption: ".",
+      },
+    ],
+    title: `<h3><span style="font-size: 20pt;"><strong>28 del Pisto</strong></span></h3>`,
+    text: "Jornada especial con un regalo para toda la vida 🎸",
+    date: "09/05/2026",
+    torneo: "Cumpleaños Feliz",
+  },
+
+
 ];
 
 
